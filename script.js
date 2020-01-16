@@ -18,7 +18,7 @@
   document.getElementById("password").values = password;
 
   //add password to previously generated password section
-  document.getElementById("lastNums").innerHTML += password + "<br />";
+  document.getElementById("password").innerHTML = password + "<br />";
   }
   //set default length display of 25
   document.getElementById("length").innerHTML = "Length: 25";
@@ -37,7 +37,7 @@
   //function to copy password to clipboard
   function copyPassword(){
 
-  document.getElementById("display").select();
+  document.getElementById("password").select();
 
     document.execCommand("Copy");
 
